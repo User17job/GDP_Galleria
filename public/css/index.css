@@ -194,6 +194,7 @@ hr{
     font-weight: 700;
     transition: 0.3s;
     z-index: 10;
+    background-color: transparent;
     transform: rotate(90deg);
 
   }
@@ -494,3 +495,81 @@ hr{
 
   
 }
+
+
+/* modal styles */
+.bg-darkr{
+  background-color: #000000;
+}
+.modal-body1{
+  background-color: #000000;
+  height: 550px;
+  position: relative;
+}
+.modal-body1>figure{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: solid;
+}
+.modal-body1>figure>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.modal-body1>.modal-contact-info{
+  position: absolute;
+  top: 60px;
+  left: 5%;
+  border-radius: 10px;
+  width: 90%;
+  height: 400px;
+  font-size: 20px;
+
+  /* border: solid white; */
+}
+
+.modal-body2{
+  background-color: #000000;
+  height: 650px;
+  position: relative;
+}
+.modal-body2>figure{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: solid;
+}
+.modal-body2>figure>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+.modal-body2>.modal-project-image{
+  position: absolute;
+  top: 10px;
+  left: 5%;
+  border-radius: 10px;
+  width: 90%;
+  height: 280px;
+  font-size: 20px;
+  /* border: solid 0.5px white; */
+}
+.modal-body2>.modal-project-image>img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: solid transparent;
+}
+.modal-body2>.modal-project-info{
+  position: absolute;
+  top: 320px;
+  left: 5%;
+  border-radius: 10px;
+  width: 90%;
+  height: 320px;
+} 
+/* modal styles end\*/

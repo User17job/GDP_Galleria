@@ -28,7 +28,7 @@
                     <div class="col-5  navbar-links">
                         <a href="#footer" class="nav-link underline">Redes</a>
                         <a href="#" class="nav-link btn">
-                            <button role="button" class="nav-link__button">Contactanos</button>
+                            <button role="button" class="nav-link__button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contactanos</button>
                         </a>
                     </div>
                  </div>   
@@ -42,13 +42,13 @@
         <div class="col">
             <header class="header justify-content-center text-center p-2">
                 <h1> Galeria de Proyectos</h1>
-                <h6>Explora nuestra colección de proyectos hechos a medida que voy creciendo en el mundo DEV.</h6>
+                <h6>Explora mi colección de proyectos hechos a medida que voy creciendo en el mundo DEV.</h6>
                 <h5>By user17job(Ramphys)</h5>
             </header>
             <div class="row justify-content-start p-1">
                 <div class="col-2">
                     <a href="#" class="header-link">
-                        <button class="header-link__btn text-dark">Contactanos</button>
+                        <button class="header-link__btn text-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contactanos</button>
                     </a>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                 <div class="wrapper1 p-2 ">
                     <div class="wrapper1--project border">
                         <!-- modal button -->
-                        <div class="wrapper1--project__info" id="project-info">...</div>
+                        <button class="wrapper1--project__info" id="project-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">...</button>
                         <figure class="wrapper1--project__figure">
                             <img src="./assets/fondo6.png"  alt="project-image">
                         </figure>
@@ -84,7 +84,7 @@
                 <div class="wrapper1 p-2 ">
                     <div class="wrapper1--project border">
                         <!-- modal button -->
-                        <div class="wrapper1--project__info" id="project-info">...</div>
+                        <button class="wrapper1--project__info" id="project-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">...</button>
                         <figure class="wrapper1--project__figure">
                             <img src="./assets/fondo3.png"  alt="project-image">
                         </figure>
@@ -107,27 +107,28 @@
                 <div class="row justify-content-center footer--head">
                     <div class="col-12 col-md-3   footer--socials ">
                         <figure>
-                            <a href="#">
+                            <a href="https://github.com/user17job">
                                 <img src="./assets/github.png"  alt="redes">
                             </a>
                         </figure>
                         <figure>
-                            <a href="#">
+                            <a href="https://www.instagram.com/user17job/">
                                 <img src="./assets/instagram.png"  alt="redes">
                             </a>
                         </figure>
                         <figure>
-                            <a href="#">
+                            <a href="https://www.linkedin.com/in/user17job/">
                                 <img src="./assets/linkedin.png"  alt="redes">
                             </a>
                         </figure>
                         
                     </div>
                     <div class="col-12 col-md-7  footer--text">
-                        <div class="borderr">Explore our gallery of projects and connect with us on social media.</div>
+                        <!-- <div class="borderr">Explore our gallery of projects and connect with us on social media.</div> -->
+                        <div class="borderr">Explora mi galeria de proyectos y conecta conmigo a traves de mis redes sociales</div>
                     </div>
                     <div class="col-12 col-md-2 ">
-                        <button class="footer--button  nav-link__button">Contactanos</button>
+                        <button class="footer--button  nav-link__button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contactanos</button>
                     </div>
                 </div>
 
@@ -165,6 +166,121 @@
       </div>
       <h5 class="bye">&copy; by User17job(Ramphys)</h5>
 </div>
+
+
+  
+  <!-- Modal1 -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-darkr text-light text-center">
+          <h1 class="modal-title fs-3 text-center" id="staticBackdropLabel">Contacto</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body1 p-0">
+          <figure>
+            <img src="./assets/fondo2.png" alt="">
+          </figure>
+
+          <!-- <figure class="modal-contact-image">
+            <img src="./assets/fondo8.png" alt="">
+          </figure> -->
+          <section class="modal-contact-info p-2 text-light">
+            <h3>Information</h3>
+            <ul>
+              <li>Email ------ <a href="mailto:user17job">user17job@gmail.com</a>
+              </li>
+              <br>
+              <li>Mobil ------ +18295237077</li>
+              <br>
+              <li>Instagram -- @User17job</li>
+              <br>
+              <li>Linkedin --- <a href="https://www.linkedin.com/in/user17job" target="_blank">linkedin.com/in/user17job</a></li>
+            </ul>
+          </section>
+
+        </div>
+        <div class="modal-footer bg-darkr">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal2 -->
+  <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-darkr text-light text-center">
+          <h1 class="modal-title fs-3 text-center modal2-title" id="staticBackdropLabel" >Project Name</h1><!---->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body2 p-0">
+          <figure>
+            <img src="./assets/fondo5.png" alt="">
+          </figure>
+
+           <figure class="modal-project-image" >
+
+            <img src="./assets/fondo8.png" alt="">
+          </figure> 
+          <section class="modal-project-info p-2   text-light">
+            <h3>Information</h3>
+            <ul>
+              <li>ID: --------------------------- valor</li>
+              <li>Nombre: ---------------------- valor</li>
+              <li>Descripción: ------------------ valor</li>
+              <li>Herramientas: ---------------- valor</li>
+              <li>Link: ------------------------- valor</li>
+            </ul>
+          </section>
+
+        </div>
+        <div class="modal-footer bg-darkr">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal3 -->
+  <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-darkr text-light text-center">
+          <h1 class="modal-title fs-3 text-center modal2-title" id="staticBackdropLabel" >Project Name</h1><!---->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body2 p-0">
+          <figure>
+            <img src="./assets/fondo4.png" alt="">
+          </figure>
+
+           <figure class="modal-project-image" >
+
+            <img src="./assets/fondo3.png" alt="">
+          </figure> 
+          <section class="modal-project-info p-2   text-light">
+            <h3>Information</h3>
+            <ul>
+              <li>ID: --------------------------- valor</li>
+              <li>Nombre: ---------------------- valor</li>
+              <li>Descripción: ------------------ valor</li>
+              <li>Herramientas: ---------------- valor</li>
+              <li>Link: ------------------------- valor</li>
+            </ul>
+          </section>
+
+        </div>
+        <div class="modal-footer bg-darkr">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./public/js/index.js"></script>
