@@ -372,6 +372,9 @@ hr{
     height: 40px;
     margin-top:  50px;
 }
+input, textarea{
+  font-weight: 400;
+}
   .form--input__name{
     height: 30px;
     width: 220px;
