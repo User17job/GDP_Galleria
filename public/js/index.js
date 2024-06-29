@@ -18,20 +18,21 @@ const footerText    =document.getElementById('footerText');
 const footerForm    =document.getElementById('footerForm');
 const formSubmitBtn =document.getElementById('formSubmitBtn');
 // form
-const inputName     = document.getElementById('name')
-const inputEmail    = document.getElementById('email')
-const inputCommet   = document.getElementById('comment')
+const inputName     = document.getElementById('name');
+const inputEmail    = document.getElementById('email');
+const inputCommet   = document.getElementById('comment');
 
-const modaltitle    = document.getElementById('staticBackdropLabel') 
+const modaltitle    = document.getElementById('staticBackdropLabel');
+const bye           = document.querySelector('.bye');
 // let Lang=true;
-let  nombre       
-let  descripcion ;
+let  nombre       ;
+let  descripcion  ;
 let  herramientas ;
 let  linkProyecto ;
-let  imagen ;
-let  name  ;
-let  description;
-let  by;        
+let  imagen       ;
+let  name         ;
+let  description  ;
+let  by           ;        
 
 const english = document.getElementById("EN");
 const spanish = document.getElementById("ES");
@@ -45,7 +46,8 @@ navBtn1.innerText      ='Contact us';
 navBtn2.innerText      ='Contact us';
 presentation.innerText ="Gallery of projects";
 welcome.innerText      ="Explore our collection of projects made with dedication and dedication for a greater visualization of our skills.";
-por.innerText          ="By user17job";
+por.innerText          ="© By user17job";
+bye.innerText          ="© By user17job";
 wrapper1Title.innerText="Projects";
 wrapper2Title.innerText="Ideas for ask for our services";
 footerText.innerText   ="Explore our projects Gallery and connet with us throught our socials media.";
@@ -66,7 +68,8 @@ formSubmitBtn.innerText="Send";
     navBtn2.innerText      ='Contactanos';
     presentation.innerText ="Galeria de proyectos";
     welcome.innerText      ="Explora nuestra colección de proyectos hechos con dedicacion y entrega para una mayor visualizacion de nuestras habilidades.";
-    por.innerText          ="Por user17job";
+    por.innerText          ="© Por user17job";
+    bye.innerText          ="© Por user17job";
     wrapper1Title.innerText="Proyectos";
     wrapper2Title.innerText="Ideas para solicitar nuestros servicios";
     footerText.innerText   ="Explora nuestra galeria de proyectos y conecta con nosotros a traves de nuestras redes sociales";
@@ -140,7 +143,7 @@ function formatearDatosSpanish(lang){
     `;
   }
   for (let i = 1; i <= 7; i++) {
-    nombre      = trabajos.trabajos[i+13].nombre;
+    nombre       = trabajos.trabajos[i+13].nombre;
     descripcion  = trabajos.trabajos[i+13].descripcion;
     herramientas = trabajos.trabajos[i+13].herramientas;
     linkProyecto = trabajos.trabajos[i+13].link;
@@ -198,7 +201,8 @@ if(trabajos){
           <li><strong>Nombre:</strong> ${nombre}</li>
           <li><strong>Descripcion:</strong> ${descripcion}</li>
           <li><strong>Herramientas:</strong> ${herramientas}</li>
-          <li><strong>Link:</strong><a href=${linkProyecto} target='_blank'>  Click</li>
+          <li><strong>Link:</strong><a href=${linkProyecto} target='_blank'>Click</a></li>
+          <li><strong>BY:</strong> ${by}</li>
         </ul>
 
         `
@@ -232,6 +236,7 @@ if(trabajos){
           <li><strong>Nombre:</strong> ${nombre}</li>
           <li><strong>Descripcion:</strong> ${descripcion}</li>
           <li><strong>Herramientas:</strong> ${herramientas}</li>
+          <li><strong>BY:</strong> ${by}</li>
         </ul>
 
         `
@@ -334,7 +339,8 @@ if(trabajos){
           <li><strong>Name:</strong> ${name}</li>
           <li><strong>Description:</strong> ${description}</li>
           <li><strong>Tools:</strong> ${herramientas}</li>
-          <li><strong>Link:</strong><a href=${linkProyecto} target='_blank'>  Click</li>
+          <li><strong>Link:</strong><a href=${linkProyecto} target='_blank'>Click</a></li>
+          <li><strong>BY:</strong>${by}</li>
         </ul>
 
         `
@@ -367,7 +373,8 @@ if(trabajos){
         <ul class="text-start">
           <li><strong>name:</strong> ${name}</li>
           <li><strong>Description:</strong> ${description}</li>
-          <li><strong>Tools:</strong> ${herramientas}</li>
+          <li><strong>Tools:</strong> what the project need</li>
+          <li><strong>BY:</strong> ${by}</li>
         </ul>
 
         `
