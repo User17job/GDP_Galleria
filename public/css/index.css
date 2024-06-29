@@ -114,6 +114,7 @@ h5{
     margin: -50px 0px;
     font-family: "Roboto Mono", monospace;
     font-weight: 600;
+
 }
 h6{
   font-family: "EB Garamond", serif;
@@ -417,13 +418,16 @@ input, textarea{
   }
 
   /* footer styles end\ */
-  .bye{
+  .by{
     margin: auto;
     text-align: center;
     border: solid transparent;
   }
   #EN, #ES{
     margin-left: 5;
+  }
+  #EN:hover, #ES:hover{
+    cursor: pointer;
   }
   .bu{
     display: none;
